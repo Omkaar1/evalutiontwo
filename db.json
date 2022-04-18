@@ -1,0 +1,15 @@
+{
+  "students": [
+    {
+      "first_name": "Omkar",
+      "last_name": "Londhe",
+      "email": "imomkarlondhe@gmail.com",
+      "age": "25",
+      "tenth_score": "50",
+      "twelth_score": "50",
+      "preferred_branch": "science",
+      "gender": "male",
+      "id": 1
+    }
+  ]
+}
