@@ -1,4 +1,5 @@
 import React from "react";
+import "./ShowStudents.css";
 
 export const ShowStudents = ({ studentData }) => {
   console.log(studentData);

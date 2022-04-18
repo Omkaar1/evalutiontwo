@@ -134,7 +134,7 @@ export const AddStudent = ({ fetData }) => {
             name="gender"
             className="male"
             type="radio"
-            value={"male"}
+            value={"Male"}
           />{" "}
           Female{" "}
           <input
@@ -142,7 +142,7 @@ export const AddStudent = ({ fetData }) => {
             name="gender"
             className="female"
             type="radio"
-            value={"female"}
+            value={"Female"}
           />
         </div>
       </div>
