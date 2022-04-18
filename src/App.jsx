@@ -6,7 +6,7 @@ import axios from "axios";
 
 function App() {
   const [studentData, setStudentData] = useState([]);
-  // const [toggle, setToggle] = useState();
+  const [form, setForm] = useState(false);
   const fetData = () => {
     axios.get("http://localhost:8080/students").then((res) => {
       setStudentData(res.data);
@@ -21,10 +21,14 @@ function App() {
   // };
   return (
     <div className="App">
-      <button className="togglebtn">Add a new student</button>
-
-      <ShowStudents id="ss" studentData={studentData} />
-      <AddStudent id="as" fetData={fetData} />
+      <button className="togglebtn" onClick={() => setForm(!form)}>
+        {form ? "Go to list" : "Add a new student"}
+      </button>
+      {form ? (
+        <AddStudent id="as" fetData={fetData} />
+      ) : (
+        <ShowStudents id="ss" studentData={studentData} />
+      )}
 
       {/* Show either  AddStudent component or ShowStudents dependeing on the above button click  */}
 
